@@ -1,0 +1,26 @@
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[user]
+	name = nerdbabe
+	email = mail@nerdbabe.de
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
