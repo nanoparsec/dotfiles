@@ -22,3 +22,6 @@ syntax enable                                    " Enable syntax highlighting
 set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
 colorscheme pinkiepie                            " And me like it pink
+
+" Clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<cr>
