@@ -13,6 +13,17 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'junegunn/vim-emoji'
 " Syntastic: Really great Syntax checker
 Plugin 'scrooloose/syntastic'
+" Nerdtree: A tree explorer plugin
+Plugin 'scrooloose/nerdtree'
+" Polyglot: A collection of language packs, loaded on demand
+Plugin 'sheerun/vim-polyglot'
+" Commentary: Minimalistic commenting plugin
+Plugin 'tpope/vim-commentary'
+" Rainbow: Keep your sanity in a jungle of parentheses
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1
+" Ctrlp: Full path fuzzy finder
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
