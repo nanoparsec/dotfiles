@@ -26,13 +26,16 @@ set hlsearch                                                  " highlight search
 set incsearch                                                 " Incremental search, search as you type
 set ignorecase smartcase                                      " Ignore case when searching
 set ttyfast                                                   " We got us a fast terminal (a.k.a. local machine)
-set list listchars=trail:·,tab:>-,nbsp:¬,extends:»,precedes:« " Show invisble chars and tell how to display them
 set nobackup                                                  " Don't make a backup before overwriting a file.
 set nowritebackup                                             " And again.
 set noswapfile                                                " Don't use swapfiles
 set hidden                                                    " Handle multiple buffers better.
 set laststatus=2                                              " Show the status line all the time
-
+set expandtab                                                 " Use Soft-Tabs
+set tabstop=2 softtabstop=2 shiftwidth=2                      " Use two spaces for tabs, soft-tabs and when shifting
+set nowrap                                                    " Deactivate Wrapping
+set spell spelllang=en_us                                     " Activate spell checking and set American as default
+set list listchars=tab:›\ ,trail:‹                            " Show invisible characters: Tabs & trailing whitespace
 
 " Colors
 syntax enable                                    " Enable syntax highlighting
