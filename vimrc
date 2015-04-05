@@ -9,6 +9,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+" Emoji: Emojis. For Vim. Awesome.
+Plugin 'junegunn/vim-emoji'
+" Syntastic: Really great Syntax checker
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,6 +39,21 @@ syntax enable                                    " Enable syntax highlighting
 set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
 colorscheme pinkiepie                            " And me like it pink
+
+" Also run a Syntax Check when the file is opened
+let g:syntastic_check_on_open=1
+
+" Configure syntastic with sweet cats made by moonglum :)
+if emoji#available()
+	" Terminal Vim for example
+	" Cats
+	let g:syntastic_error_symbol=emoji#for('scream_cat')
+	let g:syntastic_warning_symbol=emoji#for('crying_cat_face')
+else
+	" GUI MacVim for example
+	let g:syntastic_error_symbol='✗'
+	let g:syntastic_warning_symbol='⚠'
+end
 
 " Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
