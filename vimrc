@@ -43,6 +43,11 @@ set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
 colorscheme pinkiepie                            " And me like it pink
 
+" Switch spell checking language (from moonglum)
+command! British :set spelllang=en_gb
+command! American :set spelllang=en_us
+command! German :set spelllang=de
+
 " Also run a Syntax Check when the file is opened
 let g:syntastic_check_on_open=1
 
