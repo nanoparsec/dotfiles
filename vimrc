@@ -74,5 +74,8 @@ else
 	let g:syntastic_warning_symbol='⚠'
 end
 
+" Wrap in Git Commit Messages
+autocmd FileType gitcommit set tw=72 formatoptions+=t
+
 " Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
