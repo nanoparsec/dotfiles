@@ -51,8 +51,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+# For homebrew
+PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

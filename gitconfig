@@ -11,6 +11,8 @@
 	ui = true
 [core]
 	autocrlf = input
+	excludesfile = /Users/nerdbabe/.gitignore_global
+	editor = vim
 [push]
 	default = simple
 [pull]
@@ -24,3 +26,9 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
