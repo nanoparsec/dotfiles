@@ -81,3 +81,4 @@ PATH=/usr/local/sbin:$PATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+stty erase '^?<'
