@@ -69,6 +69,8 @@ set tabstop=2 softtabstop=2 shiftwidth=2                      " Use two spaces f
 set nowrap                                                    " Deactivate Wrapping
 set spell spelllang=en_us                                     " Activate spell checking and set American as default
 set list listchars=tab:›\ ,trail:‹                            " Show invisible characters: Tabs & trailing whitespace
+set backspace=2
+
 
 " Colors
 syntax enable                                    " Enable syntax highlighting
