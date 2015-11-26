@@ -13,6 +13,7 @@
 	autocrlf = input
 	excludesfile = /Users/nerdbabe/.gitignore_global
 	editor = vim
+	precomposeunicode = true
 [push]
 	default = simple
 [pull]
@@ -32,3 +33,8 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+	

@@ -70,13 +70,14 @@ set nowrap                                                    " Deactivate Wrapp
 set spell spelllang=en_us                                     " Activate spell checking and set American as default
 set list listchars=tab:›\ ,trail:‹                            " Show invisible characters: Tabs & trailing whitespace
 set backspace=2
+set number
 
 
 " Colors
 syntax enable                                    " Enable syntax highlighting
 set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
-colorscheme pinkiepie                            " And me like it pink
+" colorscheme pinkiepie                            " And me like it pink
 
 " Switch spell checking language (from moonglum)
 command! British :set spelllang=en_gb

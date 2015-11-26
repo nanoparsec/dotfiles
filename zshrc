@@ -65,6 +65,8 @@ PATH=/usr/local/sbin:$PATH
 #   export EDITOR='mvim'
 # fi
 
+export BUNDLER_EDITOR=atom
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
