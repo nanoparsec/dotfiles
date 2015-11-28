@@ -84,3 +84,5 @@ export BUNDLER_EDITOR=atom
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 stty erase '^?<'
+
+fortune | ponysay
