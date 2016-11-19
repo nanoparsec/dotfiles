@@ -7,6 +7,16 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" Color Scheme
+Plugin 'sickill/vim-monokai'
+Plugin 'theWildSushii/SweetCandy.vim'
+Plugin 'atweiden/vim-colors-behelit'
+Plugin 'hachy/eva01.vim'
+Plugin 'severb/monoacc'
+Plugin 'Sclarki/neonwave.vim'
+Plugin 'DrowsySaturn/VIvid.vim'
+Plugin 'reedes/vim-colors-pencil'
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Emoji: Emojis. For Vim. Awesome.
@@ -77,7 +87,7 @@ set number
 syntax enable                                    " Enable syntax highlighting
 set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
-" colorscheme pinkiepie                            " And me like it pink
+colorscheme neonwave                              " And me like it pink
 
 " Switch spell checking language (from moonglum)
 command! British :set spelllang=en_gb

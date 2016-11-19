@@ -82,6 +82,9 @@ export BUNDLER_EDITOR=atom
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Github-flavored Git
+function git(){hub $@}
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 stty erase '^?<'
 
