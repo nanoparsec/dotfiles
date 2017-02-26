@@ -14,10 +14,10 @@ My setup so far:
 ## iTerm2
 [iTerm2](https://www.iterm2.com/) is a terminal replacement for Mac. Since I am a color lover, my iTerm2 is colorful, too. :)
 
-You can find my color setting [here}(https://github.com/nerdbabe/dotfiles/blob/master/iterm2_profile/com.googlecode.iterm2.plist)
+You can find my color setting [here](https://github.com/nerdbabe/dotfiles/blob/master/iterm2_profile/com.googlecode.iterm2.plist)
 
 ## Oh my Zsh
-I am using a standard configuration of [Oh my Zsh}(http://ohmyz.sh/) with the [Agnoster theme](https://github.com/agnoster/agnoster-zsh-theme) and [Meslo for Powerline](https://github.com/powerline/fonts) as font.
+I am using a standard configuration of [Oh my Zsh](http://ohmyz.sh/) with the [Agnoster theme](https://github.com/agnoster/agnoster-zsh-theme) and [Meslo for Powerline](https://github.com/powerline/fonts) as font.
 
 ## Tmux
 The color scheme of tmux is also blending into my Terminal. You can find the colors [here](https://github.com/nerdbabe/dotfiles/tree/master/color).
