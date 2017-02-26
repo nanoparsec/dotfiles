@@ -2,6 +2,8 @@
   Zen: {}
   "atom-beautify":
     _analyticsUserId: "d2608008-737b-4186-aaf0-2a940f1f3a23"
+  "atom-clock":
+    locale: "de"
   "atom-color-highlight":
     hideMarkersInComments: true
     hideMarkersInStrings: true
@@ -35,14 +37,17 @@
     projectHome: "/Users/nerdbabe/Projects"
     telemetryConsent: "no"
     themes: [
-      "seti-ui"
+      "twilightsparkle-ui"
       "twilightsparkle-syntax"
     ]
+    useCustomTitleBar: true
   editor:
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
+    preferredLineLength: 400
     showIndentGuide: true
     showInvisibles: true
+    softWrapHangingIndent: 10000
   "exception-reporting":
     userId: "36eba632-c5a8-91c8-6039-e5e09ae27d1f"
   "file-icons":
@@ -61,9 +66,8 @@
       red: 136
     fontWeight: "Regular"
   linter:
-    errorPanelHeight: 22
+    errorPanelHeight: 24
     showErrorInline: true
-    showErrorPanel: false
   "linter-csslint":
     disableTimeout: true
   "linter-eslint": {}
@@ -102,7 +106,13 @@
     viewedVersion: "0.81.0"
   "seti-ui":
     font: "Default Atom Font"
-    themeColor: "Pink"
+    themeColor: "Purple"
   tabs: {}
+  "twilightsparkle-ui":
+    themeColor: "Purple"
   welcome:
     showOnStartup: false
+".basic.html.text":
+  editor:
+    softWrap: false
+    softWrapAtPreferredLineLength: false
