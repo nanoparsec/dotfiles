@@ -7,6 +7,9 @@
   "atom-color-highlight":
     hideMarkersInComments: true
     hideMarkersInStrings: true
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-terminal":
     app: "Default: iTerm.app"
   "autoclose-html":
@@ -14,18 +17,43 @@
       "\"*\""
     ]
     closeOnEndOfOpeningTag: true
+    forceInline: [
+      "title"
+      "h1"
+      "h2"
+      "h3"
+      "h4"
+      "h5"
+      "h6"
+      "p"
+      "li"
+    ]
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-plus": {}
-  "autocomplete-ruby":
-    rsensePath: "/Users/nerdbabe/.rvm/wrappers/ruby-2.2.0/rsense"
+  "autocomplete-ruby": {}
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
     allowPendingPaneItems: false
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "lorem-ipsum"
       "filetype-color"
       "w3c-validation"
       "whitespace"
+      "atom-ide-ui"
+      "ide-css"
+      "ide-html"
+      "ide-json"
+      "ide-yaml"
+      "linter-htmlhint"
+      "minimap"
+      "autocomplete-ruby"
+      "language-gfm"
+      "linter-rubocop"
+      "linter-markdown"
     ]
     ignoredNames: [
       ".git"
@@ -40,13 +68,14 @@
       "twilightsparkle-ui"
       "twilightsparkle-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
-    fontSize: 16
+    fontFamily: "FiraCode-Light"
     invisibles: {}
-    preferredLineLength: 400
+    preferredLineLength: 200
     showIndentGuide: true
     showInvisibles: true
+    softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 10000
   "exception-reporting":
     userId: "36eba632-c5a8-91c8-6039-e5e09ae27d1f"
@@ -65,37 +94,27 @@
       green: 84
       red: 136
     fontWeight: "Regular"
-  linter:
-    errorPanelHeight: 24
-    showErrorInline: true
+  linter: {}
   "linter-csslint":
     disableTimeout: true
   "linter-eslint": {}
-  "linter-haml":
-    executablePath: "/Users/nerdbabe/.rvm/wrappers/ruby-2.2.5/haml-lint"
-  "linter-htmlhint":
-    enabledScopes: [
-      "text.html.angular"
-      "text.html.basic"
-      "text.html.gohtml"
-      "text.html.jsp"
-      "text.html.mustache"
-    ]
+  "linter-haml": {}
   "linter-less": {}
   "linter-php": {}
-  "linter-rubocop":
-    command: "/Users/nerdbabe/.rvm/wrappers/ruby-2.2.0/rubocop"
+  "linter-rubocop": {}
   "linter-sass-lint":
     globalNodePath: "/usr/local"
-    globalSassLint: true
-  "linter-scss-lint":
-    executablePath: "/Users/nerdbabe/.rvm/wrappers/ruby-2.2.0/scss-lint"
+    noConfigDisable: true
+  "linter-scss-lint": {}
   "linter-stylelint":
-    disableWhenNoConfig: false
     showIgnored: true
-    useStandard: true
+  "linter-ui-default":
+    panelHeight: 414
+    showPanel: true
   "linter-xmllint":
     executablePath: "/usr/bin/xmllint"
+  "markdown-preview":
+    breakOnSingleNewline: true
   metrics:
     userId: "d7d2b907d09495b563dfc531bc3eb81f3abbca06"
   minimap: {}
@@ -107,12 +126,87 @@
   "seti-ui":
     font: "Default Atom Font"
     themeColor: "Purple"
+  "spell-check":
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.md"
+    ]
+    knownWords: [
+      "complate"
+      "Guides"
+      "Bachelorarbeit"
+      "Wartbarkeit"
+      "modulare"
+      "Viewports"
+      "Responsive"
+      "modular"
+      "Frontends"
+      "Implementierungsansatz"
+      "Templatesprache"
+      "Templates"
+      "Präsentationslogik"
+      "Markups"
+      "Wroblewski"
+      "Marcotte"
+      "Haml"
+      "Templatesprachen"
+      "Web-Frontend"
+      "Frontend-Code"
+      "Frontend"
+      "fractal"
+      "Entwickler"
+      "internetfähiger"
+      "Nebenprojekt"
+      "mustache"
+    ]
+    localePaths: [
+      "/System/Library/Assets/"
+    ]
+    locales: [
+      "de-DE"
+    ]
   tabs: {}
+  "terminal-plus":
+    ansiColors:
+      normal:
+        blue: "#007ef2"
+        cyan: "#00b7ee"
+        green: "#00c964"
+        red: "#f5348e"
+      zBright:
+        brightRed: "#ff3296"
+    core: {}
+    iconColors:
+      green: "#00c964"
+      orange: "#ffc016"
+      pink: "#f5348e"
+      purple: "#c8abf5"
+      red: "#ff3296"
+    style:
+      theme: "dracula"
+    toggles: {}
+  "tree-view": {}
   "twilightsparkle-ui":
     themeColor: "Purple"
   welcome:
     showOnStartup: false
+  wordcount:
+    goal: 25000
+    goalBgColor: "#c72fc7"
+    goalColor: "#01d704"
+    ignorecode: true
+    ignorecomments: true
 ".basic.html.text":
   editor:
     softWrap: false
     softWrapAtPreferredLineLength: false
+".md.text":
+  editor:
+    showIndentGuide: false
+    showInvisibles: false
+    softWrapAtPreferredLineLength: true
