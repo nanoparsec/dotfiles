@@ -1,0 +1,57 @@
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = nanoparsec
+	email = mail@nerdbabe.de
+[credential]
+	helper = osxkeychain
+# https://nathanhoad.net/how-to-colours-in-git/
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+	autocrlf = input
+	editor = vim
+	precomposeunicode = true
+[push]
+	default = simple
+[pull]
+	rebase = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+	stats = shortlog -sn
+	praise = blame
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+	overview = log --all --since='2 weeks' --oneline --no-merges
+	recap = log --all --oneline --no-merges --author=<mail@nerdbabe.de>
+	today = log --since=00:00:00 --all --no-merges --oneline --author=<mail@nerdbabe.de>
+	graph = log --graph --all --decorate --stat --date=is
+	prune-all = !git remote | xargs -n 1 git remote prune
+[tig]
+  line-graphics = "utf-8"
+[diff]
+  compactionHeuristic = true

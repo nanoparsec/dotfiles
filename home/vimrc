@@ -2,35 +2,35 @@ set nocompatible                                              " Turn off vi-comp
 filetype off                                                  " required for Vundle to work (See Vundle for details)
 " set the runtime path to include Vundle and initialize
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " Color Scheme
-Plugin 'sickill/vim-monokai'
-Plugin 'theWildSushii/SweetCandy.vim'
-Plugin 'atweiden/vim-colors-behelit'
-Plugin 'hachy/eva01.vim'
-Plugin 'severb/monoacc'
-Plugin 'Sclarki/neonwave.vim'
-Plugin 'DrowsySaturn/VIvid.vim'
-Plugin 'reedes/vim-colors-pencil'
+" Plugin 'sickill/vim-monokai'
+" Plugin 'theWildSushii/SweetCandy.vim'
+" Plugin 'atweiden/vim-colors-behelit'
+" Plugin 'hachy/eva01.vim'
+" Plugin 'severb/monoacc'
+" Plugin 'Sclarki/neonwave.vim'
+" Plugin 'DrowsySaturn/VIvid.vim'
+" Plugin 'reedes/vim-colors-pencil'
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+" Plugin 'gmarik/Vundle.vim'
 " Emoji: Emojis. For Vim. Awesome.
-Plugin 'junegunn/vim-emoji'
+" Plugin 'junegunn/vim-emoji'
 " Syntastic: Really great Syntax checker
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 " Nerdtree: A tree explorer plugin
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 " Polyglot: A collection of language packs, loaded on demand
-Plugin 'sheerun/vim-polyglot'
+" Plugin 'sheerun/vim-polyglot'
 " Commentary: Minimalistic commenting plugin
-Plugin 'tpope/vim-commentary'
+" Plugin 'tpope/vim-commentary'
 " Rainbow: Keep your sanity in a jungle of parentheses
-Plugin 'luochen1990/rainbow'
+" Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1
 let g:rainbow_conf = {
    \   'guifgs': ['#005fff', '#00ffaf', '#00ff5f', '#d700ff'],
@@ -55,10 +55,10 @@ let g:rainbow_conf = {
    \   }
    \}
 " Ctrlp: Full path fuzzy finder
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+" call vundle#end()            " required
 filetype plugin indent on    " required
 
 set encoding=utf-8
@@ -87,7 +87,7 @@ set number
 syntax enable                                    " Enable syntax highlighting
 set t_Co=256                                     " 256 colors
 set background=dark                              " Me like it dark
-colorscheme neonwave                              " And me like it pink
+" colorscheme neonwave                              " And me like it pink
 
 " Switch spell checking language (from moonglum)
 command! British :set spelllang=en_gb
@@ -98,16 +98,16 @@ command! German :set spelllang=de
 let g:syntastic_check_on_open=1
 
 " Configure syntastic with sweet cats made by moonglum :)
-if emoji#available()
+" if emoji#available()
 	" Terminal Vim for example
 	" Cats
-	let g:syntastic_error_symbol=emoji#for('scream_cat')
-	let g:syntastic_warning_symbol=emoji#for('crying_cat_face')
-else
+	" let g:syntastic_error_symbol=emoji#for('scream_cat')
+	" let g:syntastic_warning_symbol=emoji#for('crying_cat_face')
+" else
 	" GUI MacVim for example
-	let g:syntastic_error_symbol='✗'
-	let g:syntastic_warning_symbol='⚠'
-end
+	" let g:syntastic_error_symbol='✗'
+	" let g:syntastic_warning_symbol='⚠'
+" end
 
 " Wrap in Git Commit Messages
 autocmd FileType gitcommit set tw=72 formatoptions+=t

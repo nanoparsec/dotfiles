@@ -81,11 +81,13 @@ export BUNDLER_EDITOR=atom
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+function innodock(){docker exec -it innoqcomcms_web_1 $@ }
+function innodockt(){docker exec -e RAILS_ENV=test -it innoqcomcms_web_1 $@ }
 
 # Github-flavored Git
 function git(){hub $@}
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 stty erase '^?<'
 
 fortune | ponysay
