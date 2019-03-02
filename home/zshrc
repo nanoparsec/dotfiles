@@ -91,4 +91,4 @@ function git(){hub $@}
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 stty erase '^?<'
 
-fortune | ponysay
+fortune | ponysay -o
