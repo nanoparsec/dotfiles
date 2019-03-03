@@ -1,0 +1,17 @@
+class TrainingCoversController < ApplicationController
+  def show
+    @training = load_training
+
+    respond_to do |format|
+      format.html { render layout: false }
+    end
+  end
+
+  private
+
+  def load_training
+    Training.where(slug: params[:id])
+                  .first!
+                  .decorate
+  end
+end

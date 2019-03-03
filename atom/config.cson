@@ -7,9 +7,10 @@
   "atom-color-highlight":
     hideMarkersInComments: true
     hideMarkersInStrings: true
-  "atom-ide-ui":
-    use:
-      "atom-ide-diagnostics-ui": false
+  "atom-package-deps":
+    ignored: [
+      "linter-ui-default"
+    ]
   "atom-terminal":
     app: "Default: iTerm.app"
   "autoclose-html":
@@ -30,7 +31,8 @@
     ]
   autocomplete:
     includeCompletionsFromAllBuffers: true
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
   "autocomplete-ruby": {}
   "bracket-matcher":
     highlightMatchingLineNumber: true
@@ -43,17 +45,8 @@
       "filetype-color"
       "w3c-validation"
       "whitespace"
-      "atom-ide-ui"
-      "ide-css"
-      "ide-html"
-      "ide-json"
       "ide-yaml"
-      "linter-htmlhint"
-      "minimap"
-      "autocomplete-ruby"
       "language-gfm"
-      "linter-rubocop"
-      "linter-markdown"
     ]
     ignoredNames: [
       ".git"
@@ -70,7 +63,8 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "FiraCode-Light"
+    fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 200
     showIndentGuide: true
@@ -84,9 +78,11 @@
   "filetype-color":
     enabled: "true"
   fonts:
-    fontFamily: "Hack"
-  "git-log": {}
-  "highlight-line": {}
+    fontFamily: "Fira Code"
+  "git-log":
+    fontFamily: "Fira Code"
+  "highlight-line":
+    underline: "dotted"
   "isotope-ui":
     customBackgroundColorPicker:
       alpha: 1
@@ -101,7 +97,8 @@
   "linter-haml": {}
   "linter-less": {}
   "linter-php": {}
-  "linter-rubocop": {}
+  "linter-rubocop":
+    command: "/Users/nanoparsec/.rvm/gems/ruby-2.6.1/bin/rubocop"
   "linter-sass-lint":
     globalNodePath: "/usr/local"
     noConfigDisable: true
@@ -109,6 +106,8 @@
   "linter-stylelint":
     showIgnored: true
   "linter-ui-default":
+    decorateOnTreeView: "Files and Directories"
+    gutterPosition: "Left"
     panelHeight: 414
     showPanel: true
   "linter-xmllint":
@@ -123,9 +122,6 @@
     extendAutocompleteToVariables: true
   "release-notes":
     viewedVersion: "0.81.0"
-  "seti-ui":
-    font: "Default Atom Font"
-    themeColor: "Purple"
   "spell-check":
     addKnownWords: true
     grammars: [
@@ -170,6 +166,8 @@
     locales: [
       "de-DE"
     ]
+  "split-diff":
+    ignoreWhitespace: true
   tabs: {}
   "terminal-plus":
     ansiColors:
