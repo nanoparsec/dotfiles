@@ -1,0 +1,8 @@
+# /Users/nanoparsec/.config/tmuxinator/innoq-styleguide.yml
+
+name: innoq-styleguide
+root:  ~/Code/INNOQ/innoq-styleguide
+
+windows:
+  - server: yarn start
+  - terminal:

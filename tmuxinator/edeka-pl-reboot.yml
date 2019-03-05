@@ -1,0 +1,9 @@
+# /Users/nanoparsec/.config/tmuxinator/edeka-pl.yml
+
+name: edeka-pl
+root: ~/Code/INNOQ/edeka/pattern-library-reboot
+
+windows:
+  - server: npm start
+  - terminal:
+
