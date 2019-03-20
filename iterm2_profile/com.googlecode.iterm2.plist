@@ -163,7 +163,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1410 768 620 392 0 0 3440 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>144 265 1016 512 0 0 1280 777 </string>
+	<string>144 239 918 512 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1280 777 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -500,7 +500,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux new-session -A -s Ono-Sendai</string>
+			<string>tmux new-session -A -s nanoparsec</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>

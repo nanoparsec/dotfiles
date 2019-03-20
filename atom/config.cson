@@ -64,7 +64,6 @@
     titleBar: "custom"
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
     invisibles: {}
     preferredLineLength: 200
     showIndentGuide: true
@@ -109,7 +108,6 @@
     decorateOnTreeView: "Files and Directories"
     gutterPosition: "Left"
     panelHeight: 414
-    showPanel: true
   "linter-xmllint":
     executablePath: "/usr/bin/xmllint"
   "markdown-preview":

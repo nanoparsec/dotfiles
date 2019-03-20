@@ -42,7 +42,9 @@
 	rebase = true
 [alias]
 	s = status -s
-	lg = log --oneline --decorate --all --graph
+	lg = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lgp = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	stats = shortlog -sn
 	praise = blame
 	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
@@ -53,5 +55,12 @@
 	prune-all = !git remote | xargs -n 1 git remote prune
 [tig]
   line-graphics = "utf-8"
+	reference-format = (branch) <tag>
+	mouse = yes
+	main-view-date-display = custom
+	main-view-date-local = true
+	main-view-date-format = "%d.%m.%y"	
+[tig "color"]
+  cursor = black cyan
 [diff]
   compactionHeuristic = true
