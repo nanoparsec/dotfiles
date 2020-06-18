@@ -3,7 +3,7 @@
 These are my dotfiles.
 
 My setup so far: 
-- [iTerm2](iterm2)
+- [iTerm2](##iterm2)
 - [Oh my Zsh](oh-my-zsh)
 - [tmux](tmux)
 - [Ponysay](ponysay)
