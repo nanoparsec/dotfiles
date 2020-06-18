@@ -3,12 +3,12 @@
 These are my dotfiles.
 
 My setup so far: 
-- [iTerm2](##iterm2)
-- [Oh my Zsh](oh-my-zsh)
-- [tmux](tmux)
-- [Ponysay](ponysay)
+- [iTerm2](#iterm2)
+- [Oh my Zsh](#oh-my-zsh)
+- [tmux](#tmux)
+- [Ponysay](#ponysay)
 - [Vim](vim)
-- [Atom Editor](atom-editor)
+- [Atom Editor](#atom-editor)
 
 ## Terminal setup
 
