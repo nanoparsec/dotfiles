@@ -23,6 +23,8 @@ You can find my colour settings and my iTerm profile [here](https://github.com/n
 
 ### Oh my Zsh
 I am using a standard configuration of [Oh my Zsh](http://ohmyz.sh/) with the [Agnoster theme](https://github.com/agnoster/agnoster-zsh-theme) and [Droid Sans Mono from Nerd Fonts](https://nerdfonts.com/) with extra powerline glyphs as font.
+Find my zhs config [here](
+https://github.com/nanoparsec/dotfiles/blob/master/home/zshrc)
 
 ### Tmux
 I like to play around with the tmux status bar. You can find my tmux config [here](https://github.com/nanoparsec/dotfiles/blob/master/home/tmux.conf)
@@ -32,11 +34,17 @@ Everytime I start a new terminal window a cute little pony appears. Wanna have i
 
 ### Vim
 I don't use Vim that often (trying out Emacs is on my bucket list), but as you can see, I am into colors. I am using a basic confoguration of vim including rainbow paranthesis.
+Find my vim config [here](https://github.com/nanoparsec/dotfiles/blob/master/home/vimrc)
+CAUTION! This is a bit outdated!
 
 ![vim.png](images/vim.png)
 
 ### Atom Editor
 My favorite editor is Atom. My configuration is very simple including linters and basic helpful settings. I also wrote my own color scheme inspired by My little Pony Twilightsparkle. 
 So, if you want to have the same color experience, install [twilightsparkle-ui](https://atom.io/themes/twilightsparkle-ui) and [twilightsparkle-syntax](https://atom.io/themes/twilightsparkle-syntax) together with the [file icons package](https://atom.io/packages/file-icons)
+My atom config can be found [here](https://github.com/nanoparsec/dotfiles/tree/master/atom)
 
 ![atom.png](images/atom.png)
+
+### git config
+Can be found [here](https://github.com/nanoparsec/dotfiles/tree/master/home)
