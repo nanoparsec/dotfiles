@@ -9,6 +9,7 @@ My setup so far:
 - [Ponysay](#ponysay)
 - [Vim](#vim)
 - [Atom Editor](#atom-editor)
+- [gitconfig](#gitconfig)
 
 ## Terminal setup
 
@@ -46,5 +47,5 @@ My atom config can be found [here](https://github.com/nanoparsec/dotfiles/tree/m
 
 ![atom.png](images/atom.png)
 
-### git config
+### gitconfig
 Can be found [here](https://github.com/nanoparsec/dotfiles/tree/master/home)
