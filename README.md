@@ -7,7 +7,7 @@ My setup so far:
 - [Oh my Zsh](#oh-my-zsh)
 - [tmux](#tmux)
 - [Ponysay](#ponysay)
-- [Vim](vim)
+- [Vim](#vim)
 - [Atom Editor](#atom-editor)
 
 ## Terminal setup
