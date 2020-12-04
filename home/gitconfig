@@ -34,7 +34,7 @@
   untracked = cyan
 [core]
 	autocrlf = input
-	editor = vim
+	editor = code --wait
 	precomposeunicode = true
 [push]
 	default = simple

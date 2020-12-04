@@ -1,0 +1,8 @@
+# /Users/nanoparsec/.config/tmuxinator/innoq-styleguide.yml
+
+name: rechnologe-styleguide
+root:  ~/Code/INNOQ/rechnologe/rechnologe-styleguide
+
+windows:
+  - server: npm start
+  - terminal:

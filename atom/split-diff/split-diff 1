@@ -1,17 +1,65 @@
-class TrainingCoversController < ApplicationController
-  def show
-    @training = load_training
+@import "modularscale-sass/stylesheets/modularscale";
 
-    respond_to do |format|
-      format.html { render layout: false }
-    end
-  end
+//
+// Font stack
+//
+$font-family-sans-serif: "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: Menlo, Consolas, monospace;
 
-  private
+//
+// Base values
+//
 
-  def load_training
-    Training.where(slug: params[:id])
-                  .first!
-                  .decorate
-  end
-end
+// The font size set on the root html element.
+$base-font-size: 1rem; // 16px
+
+// Setting up a modular scale. You can see its values here:
+// https://www.modularscale.com/?1&rem&1.067
+$modularscale: (
+	base: $base-font-size,
+	ratio: $minor-second
+);
+
+// The length unit in which to output vertical rhythm values.
+$base-unit: "rem";
+
+// Base line height
+$base-line-height: 1.067;
+$paragraph-line-height: 1.45;
+$heading-line-height: 1.15;
+
+//
+// Headlines
+//
+
+// H1
+$h1-font-size: ms(6);
+$h1-line-height: $heading-line-height;
+
+// H2
+$h2-font-size: ms(3);
+$h2-line-height: $heading-line-height;
+
+// H3
+$h3-font-size: ms(-4);
+$h3-line-height: $heading-line-height;
+
+//
+// Text
+//
+
+// Paragraph
+$paragraph-font-size: $base-font-size;
+
+// Small
+$small-font-size: ms(-2);
+$extra-small-font-size: ms(-5);
+
+//
+// Icons
+//
+
+$icon-font-size-small: ms(1); // 1.0rem
+$icon-font-size-base: ms(5); // 1.3rem
+$icon-font-size-lg: ms(7); // 1.5rem
+$icon-font-size-xl: ms(10); // 1.9rem

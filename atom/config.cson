@@ -38,15 +38,19 @@
     highlightMatchingLineNumber: true
   core:
     allowPendingPaneItems: false
-    automaticallyUpdate: false
     closeDeletedFileTabs: true
     disabledPackages: [
       "lorem-ipsum"
       "filetype-color"
       "w3c-validation"
-      "whitespace"
       "ide-yaml"
-      "language-gfm"
+      "minimap"
+      "metrics"
+      "git-time-machine"
+      "highlight-selected"
+      "nyan-indent"
+      "autocomplete-html-entities"
+      "whitespace"
     ]
     ignoredNames: [
       ".git"
@@ -65,9 +69,10 @@
   editor:
     fontFamily: "Fira Code"
     invisibles: {}
-    preferredLineLength: 200
+    preferredLineLength: 300
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
     softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 10000
   "exception-reporting":
@@ -82,6 +87,7 @@
     fontFamily: "Fira Code"
   "highlight-line":
     underline: "dotted"
+  "highlight-selected": {}
   "isotope-ui":
     customBackgroundColorPicker:
       alpha: 1
@@ -107,7 +113,7 @@
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
     gutterPosition: "Left"
-    panelHeight: 414
+    panelHeight: 99
   "linter-xmllint":
     executablePath: "/usr/bin/xmllint"
   "markdown-preview":
@@ -118,6 +124,11 @@
   pigments:
     extendAutocompleteToColorValue: true
     extendAutocompleteToVariables: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
+    useEslint: true
   "release-notes":
     viewedVersion: "0.81.0"
   "spell-check":
@@ -191,6 +202,7 @@
     themeColor: "Purple"
   welcome:
     showOnStartup: false
+  whitespace: {}
   wordcount:
     goal: 25000
     goalBgColor: "#c72fc7"
