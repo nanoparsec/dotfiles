@@ -4,5 +4,5 @@ name: innoq-styleguide
 root:  ~/Code/INNOQ/innoq-styleguide
 
 windows:
-  - server: yarn start
+  - server: npm start
   - terminal:

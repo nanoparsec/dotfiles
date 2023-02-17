@@ -58,6 +58,9 @@ source $ZSH/oh-my-zsh.sh
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 
+# Ruby Version Manager
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -92,5 +95,11 @@ function git(){hub $@}
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 stty erase '^?<'
+
+# load asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# load direnv
+eval "$(direnv hook zsh)"
 
 fortune | ponysay -o

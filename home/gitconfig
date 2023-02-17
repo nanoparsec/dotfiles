@@ -6,11 +6,6 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [user]
 	name = nanoparsec
 	email = mail@nerdbabe.de
@@ -59,8 +54,15 @@
 	mouse = yes
 	main-view-date-display = custom
 	main-view-date-local = true
-	main-view-date-format = "%d.%m.%y"	
+	main-view-date-format = "%d.%m.%y"
 [tig "color"]
   cursor = black cyan
 [diff]
   compactionHeuristic = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+  defaultBranch = main

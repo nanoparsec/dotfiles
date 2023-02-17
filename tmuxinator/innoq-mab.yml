@@ -1,0 +1,8 @@
+# /Users/nanoparsec/.config/tmuxinator/development.yml
+
+name: mab
+root: ~/Code/INNOQ/mab
+
+windows:
+- server: bundle exec rails s
+- terminal:
