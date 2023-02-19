@@ -11,5 +11,5 @@ windows:
       # synchronize: after
       panes:
         - bundle exec rails s
-        - yarn watch
+        - npm run watch
   - terminal:

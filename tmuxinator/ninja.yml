@@ -1,9 +1,0 @@
-# /Users/nanoparsec/.config/tmuxinator/ninja.yml
-
-name: ninja
-root: ~/Code/INNOQ/insurninja-node
-
-windows:
-  - server: docker-compose up
-  - terminal:
-
