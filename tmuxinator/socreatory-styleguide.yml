@@ -1,7 +1,7 @@
 # /Users/nanoparsec/.config/tmuxinator/innoq-styleguide.yml
 
-name: innoq-styleguide
-root:  ~/Code/INNOQ/innoq-styleguide
+name: socreatory-styleguide
+root:  ~/Code/work/socreatory-styleguide
 
 windows:
   - server: npm start

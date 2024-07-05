@@ -1,8 +1,0 @@
-# /Users/nanoparsec/.config/tmuxinator/development.yml
-
-name: forecast
-root: ~/Code/INNOQ/forecast
-
-windows:
-  - server: bundle exec rails s
-  - terminal:

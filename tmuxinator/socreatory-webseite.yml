@@ -1,0 +1,8 @@
+# /Users/nanoparsec/.config/tmuxinator/development.yml
+
+name: socreatory-website
+root: ~/Code/work/socreatory-website
+
+windows:
+  - server: docker-compose up
+  - terminal:

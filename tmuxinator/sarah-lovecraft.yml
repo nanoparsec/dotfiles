@@ -1,0 +1,8 @@
+# /Users/nanoparsec/.config/tmuxinator/innoq-styleguide.yml
+
+name: sarah-lovecraft
+root:  ~/Code/private-projects/sarah-lovecraft
+
+windows:
+  - server: npm start
+  - terminal:

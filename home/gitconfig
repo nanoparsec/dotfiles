@@ -8,7 +8,7 @@
 	required = true
 [user]
 	name = nanoparsec
-	email = mail@nerdbabe.de
+	email = mail@nanoparsec.works
 [credential]
 	helper = osxkeychain
 # https://nathanhoad.net/how-to-colours-in-git/
