@@ -1,0 +1,4 @@
+theme = twilight-sparkle
+background-opacity = 0.7
+command = /opt/homebrew/bin/zsh -c "tmux new-session -A -s 🪐"
+macos-titlebar-style = hidden
